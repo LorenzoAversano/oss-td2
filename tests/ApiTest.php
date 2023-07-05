@@ -10,7 +10,7 @@ class ApiTest extends TestCase
         $api = new Api();
         $this->assertIsInt($api->getRandomNumber());
         $this->assertGreaterThanOrEqual(0, $api->getRandomNumber());
-        $this->assertLessThanOrEqual(0, $api->getRandomNumber());
+        $this->assertLessThanOrEqual(100, $api->getRandomNumber());
     }
     
 }
