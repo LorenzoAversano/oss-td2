@@ -22,6 +22,7 @@
         "phpunit/phpunit": "^9.6"
     },
     "scripts": {
-        "phpstorm":"@php vendor/bin/phpstan analyse src --level=max"
+        "phpstan":"@php vendor/bin/phpstan analyse src --level=max",
+        "test": "@php vendor/bin/phpunit tests"
     }
 }
