@@ -1,0 +1,27 @@
+{
+    "name": "lorenzo/oss-td2",
+    "description": "A beautiful demo package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lorenzo\\OssTd2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lorenzo",
+            "email": "lorenzo.aversano@edu.devinci.fr"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9.6"
+    },
+    "scripts": {
+        "phpstorm":"@php vendor/bin/phpstan analyse src --level=max"
+    }
+}
